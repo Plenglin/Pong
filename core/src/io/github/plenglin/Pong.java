@@ -77,7 +77,7 @@ public class Pong extends ApplicationAdapter implements ContactListener {
 		batch = new SpriteBatch();
 		cam = new OrthographicCamera();
 		shape = new ShapeRenderer();
-		font = new BitmapFont(Gdx.files.absolute("assets/ubuntu-100.fnt"), true);
+		//font = new BitmapFont(Gdx.files.classpath("assets/ubuntu-100.fnt"), true);
 		debugRenderer = new Box2DDebugRenderer();
 		
 		cam.setToOrtho(true, 20, 14);
@@ -233,7 +233,7 @@ public class Pong extends ApplicationAdapter implements ContactListener {
 		world.dispose();
 		batch.dispose();
 		shape.dispose();
-		font.dispose();
+		//font.dispose();
 		debugRenderer.dispose();
 	}
 
